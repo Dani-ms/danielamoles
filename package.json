@@ -86,10 +86,10 @@
   "main": "bootstrap-build-environment.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dani-ms/danielamoles.git"
+    "url": "git+https://github.com/Dani-ms/danielamoles.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/Dani-ms/danielamoles/issues"
   },
-  "homepage": "https://dani-ms.github.io/danielamoles/"
+  "homepage": "https://dani-ms.github.io/danielamoles.github.io"
 }
