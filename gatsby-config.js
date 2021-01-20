@@ -27,7 +27,7 @@ module.exports = {
   siteMetadata: {
     siteUrl,
     title: `daniela`,
-    pathPrefix:"/danielamoles",
+    pathPrefix:"/danielamoles.github.io",
   },
   plugins: [
     {
