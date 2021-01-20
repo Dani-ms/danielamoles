@@ -64,8 +64,7 @@
   "scripts": {
     "clean": "rimraf _graphql-generated_ .cache public",
     "build": "npm run clean && gatsby build",
-    "predeploy": "npm run build && echo \"Error: deploy command not implemented\" && exit 1",
-    "deploy": "npm run build --prefix-paths && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,scss,sass,css,md}\"",
@@ -83,10 +82,10 @@
   "lint-staged": {
     "*.{js,jsx,json,ts,tsx,scss,sass,css,md}": "prettier --write"
   },
-  "main": "index-template.tsx",
+  "main": "bootstrap-build-environment.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dani-ms/danielamoles.git"
+    "url": "https://github.com/Dani-ms/danielamoles"
   },
   "bugs": {
     "url": "https://github.com/Dani-ms/danielamoles/issues"
