@@ -1,0 +1,26 @@
+{
+  "include": [
+    "_graphql-generated_/typescript/**/*",
+    "type-declarations/**/*",
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@config/*": ["__config.debug/*"]
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "noEmit": true,
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["dom", "es2017"],
+    "isolatedModules": true,
+    "jsx": "react",
+    "allowJs": false,
+    "baseUrl": ".",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  }
+}
