@@ -83,7 +83,7 @@
   "lint-staged": {
     "*.{js,jsx,json,ts,tsx,scss,sass,css,md}": "prettier --write"
   },
-  "main": "bootstrap-build-environment.js",
+  "main": "index-template.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dani-ms/danielamoles.git"
