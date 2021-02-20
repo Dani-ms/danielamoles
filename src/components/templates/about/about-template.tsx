@@ -5,7 +5,7 @@ import "./about-template.scss";
 import Image from 'gatsby-image'
 import { throwError } from 'src/logic/app-internals/utils/throw-error'
 import { throwIfNotFluidImage } from 'src/logic/app-internals/images/gatsby-image/throw-if-not-fluid-image'
-import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 
 type Props = {
@@ -116,14 +116,14 @@ const experience = props.data.allExperienciaCsv;
               <h4 className="text-center">Experiência Profissional</h4>
               <div className="bd-example bd-example-tabs text-center">
                 
-                    <Timeline>
+                    <VerticalTimeline>
                     {experience.edges.map((item, i) => (
-                        <TimelineItem key={i} className="vertical-timeline-element--work bg-secondary" dateText={item.node.date} >
+                        <VerticalTimelineElement key={i} className="vertical-timeline-element--work bg-secondary" /*date={item.node.date}*/ >
                             <h3 className="vertical-timeline-element-title">  {item.node.empresa} </h3>
                             <p className="vertical-timeline-element-subtitle"> {item.node.resumo}</p>
-                        </TimelineItem>
+                        </VerticalTimelineElement>
                           ))}
-                    </Timeline>
+                    </VerticalTimeline>
 
                   
               
