@@ -9,6 +9,7 @@
   ],
   "dependencies": {
     "@react-spring/addons": "^9.0.0-beta.33",
+    "@types/react-vertical-timeline-component": "^3.0.0",
     "bootstrap": "^4.4.1",
     "date-fns": "^2.12.0",
     "gatsby": "^2.25.0",
@@ -32,9 +33,11 @@
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
+    "react-horizontal-timeline": "^1.5.3",
     "slugify": "^1.4.0",
     "typescript-plugin-css-modules": "^3.0.1",
-    "uuid": "^7.0.3"
+    "uuid": "^7.0.3",
+    "vertical-timeline-component-for-react": "^1.0.7"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.20.0",

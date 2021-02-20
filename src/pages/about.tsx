@@ -1,10 +1,10 @@
-import { IndexTemplate } from "src/components/templates/index/index-template"
+import {AboutTemplate } from "src/components/templates/about/about-template"
 import { graphql } from 'gatsby'
 
-export default IndexTemplate
+export default AboutTemplate
 
 export const query = graphql`
-  query PageIndex {
+  query PageAbout {
     hero: file(
       sourceInstanceName: { eq: "content" }
       relativePath: { eq: "index/hero.png" }
@@ -27,7 +27,17 @@ export const query = graphql`
         }
       }
     }
-    
+    allExperienciaCsv(sort: {fields: order, order: DESC}) {
+      edges {
+        node {
+          id
+          empresa
+          date
+          order
+          resumo
+        }
+      }
+    }
     
   }
 `

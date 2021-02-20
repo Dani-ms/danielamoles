@@ -57,11 +57,5 @@
    
 
   }
-  .group-skills{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 65px 65px;
-    grid-auto-flow: row;
-    grid-gap: 15px;
-  }
+  
 }
