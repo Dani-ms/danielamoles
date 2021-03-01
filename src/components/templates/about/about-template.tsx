@@ -6,7 +6,7 @@ import Image from 'gatsby-image'
 import { throwError } from 'src/logic/app-internals/utils/throw-error'
 import { throwIfNotFluidImage } from 'src/logic/app-internals/images/gatsby-image/throw-if-not-fluid-image'
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-
+import "react-vertical-timeline-component/style.min.css";
 
 type Props = {
   data: GQLPageAboutQuery
@@ -118,9 +118,10 @@ const experience = props.data.allExperienciaCsv;
                 
                     <VerticalTimeline>
                     {experience.edges.map((item, i) => (
-                        <VerticalTimelineElement key={i} className="vertical-timeline-element--work bg-secondary" /*date={item.node.date}*/ >
+                        <VerticalTimelineElement key={i} contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} className="vertical-timeline-element--work " date="{item.node.date}"  >
                             <h3 className="vertical-timeline-element-title">  {item.node.empresa} </h3>
                             <p className="vertical-timeline-element-subtitle"> {item.node.resumo}</p>
+                            <p className="vertical-timeline-element-subtitle"> {item.node.date}</p>
                         </VerticalTimelineElement>
                           ))}
                     </VerticalTimeline>
@@ -129,6 +130,8 @@ const experience = props.data.allExperienciaCsv;
               
               </div>
             </section>
+  
+            
           </div>
         )
       }}

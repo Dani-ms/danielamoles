@@ -1,9 +1,22 @@
 @import "variables";
 
+
 .group-skills{
     //display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 65px 65px;
     grid-auto-flow: row;
     grid-gap: 15px;
+  }
+  .vertical-timeline{
+    
+    &:before{
+      background:$secondary!important;
+    }
+  }
+  .vertical-timeline-element-content{
+    background: $secondary!important;
+  } 
+  .vertical-timeline-element-content-arrow{
+    border-right: 7px solid #F79E1A!important;
   }
