@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://dani-ms.github.io/sitemap.xml
-Host: https://dani-ms.github.io
